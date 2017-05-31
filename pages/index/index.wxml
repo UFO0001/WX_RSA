@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <input class="input"  placeholder="请输入" bindinput="input_rsa"/>
+  <view class="output" >
+      <view class="output01">输出结果：</view>
+     <view class="output02">{{output}}</view>
+  </view>
+  <view class="jiaqian" bindtap="jiaqian">加签</view>
+  <view class="yanqian" bindtap="yanqian">验签</view>
+  <view class="jiami" bindtap="jiami">加密</view>
+  <view class="jiemi" bindtap="jiemi">解密</view>
+</view>

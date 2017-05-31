@@ -63,7 +63,7 @@ Page({
       var ver = verify_rsa.verifyString("signData", Sig)
       console.log('验签结果：' + ver)
       this.setData({
-        output: Sig
+        output: ver
       })
     }
   

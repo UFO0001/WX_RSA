@@ -1,5 +1,4 @@
-效果演示：
-
+效果演示：http://blog.csdn.NET/ufo00001/article/details/72822907
 
 Github链接：https://github.com/UFO0001/WX_RSA
 
@@ -7,12 +6,9 @@ Github链接：https://github.com/UFO0001/WX_RSA
 
 1. 将 wx_rsa.js文件copy到自己想放置的目录下，并在需要用到的js文件中引用 如：
 
-[javascript] view plain copy
 var RSA = require('../../utils/wx_rsa.js')  
 2. 在对应的触发事件下进行相应的
 加密：
-
-[javascript] view plain copy
 var input_rsa = this.data.input;  
     var encrypt_rsa = new RSA.RSAKey();  
     encrypt_rsa = RSA.KEYUTIL.getKey(publicKey);  
@@ -20,8 +16,6 @@ var input_rsa = this.data.input;
     encStr = RSA.hex2b64(encStr);  
     console.log("加密结果：" + encStr)  
 解密：
-
-[javascript] view plain copy
 var decrypt_rsa = new RSA.RSAKey();  
    decrypt_rsa = RSA.KEYUTIL.getKey(privateKey);  
    if (encStr.length <=0){  
@@ -40,7 +34,6 @@ var decrypt_rsa = new RSA.RSAKey();
      })  
    }  
 加签：
-[javascript] view plain copy
 var sign_rsa = new RSA.RSAKey();  
 sign_rsa = RSA.KEYUTIL.getKey(privateKey);  
 console.log('加签RSA:')  
@@ -53,7 +46,6 @@ this.setData({
   output: Sig  
 })  
 验签：
-[javascript] view plain copy
 var verify_rsa = new RSA.RSAKey();  
    verify_rsa = RSA.KEYUTIL.getKey(publicKey);  
    if (Sig == ""){  
@@ -90,5 +82,4 @@ var verify_rsa = new RSA.RSAKey();
 使用公钥加密算法，可以对明文进行加密，但不能确定是谁发出该消息
 
 
-欢迎留言交流指正 谢谢！：）
-本文链接：http://blog.csdn.NET/ufo00001/article/details/72822907
+欢迎留言交流指正 谢谢！：）http://blog.csdn.NET/ufo00001/article/details/72822907
